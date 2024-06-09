@@ -2,7 +2,7 @@ const Card = ({ apiData, onClickItem }) => {
     return apiData.map((data, i) => {
         return (
             <div key={i} className={`card ${data.featured ? "featured" : ""}`}>
-                <img src={`${data.logo}`} alt="" />
+                <img src={data.logo} alt="" className="img" />
                 <div className="card-info">
                     <div className="card-details">
                         <div className="card-title">

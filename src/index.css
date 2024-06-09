@@ -49,6 +49,7 @@ body {
         .app-header-search-item {
             display: flex;
             align-items: center;
+            flex-wrap: wrap;
             gap: 10px;
 
             .display-item {
@@ -116,9 +117,11 @@ body {
     margin: 0 auto;
     position: relative;
 
-    img {
+    .img {
         min-width: 80px;
+        max-width: 80px;
         min-height: 80px;
+        max-height: 80px;
         object-fit: cover;
         object-position: center;
         border: 1px solid #eee;
@@ -201,7 +204,7 @@ body {
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 5px;
+            gap: 10px;
 
             .category {
                 background-color: var(--light-grayish-cyan-filter-tablets);
@@ -240,15 +243,25 @@ body {
         }
     }
 
-    .card img {
-        min-width: 50px;
-        min-height: 50px;
-        position: absolute;
-        top: 0;
-        left: 20px;
-        transform: translateY(-50%);
-        background-color: #5ba4a4;
-        border-radius: 50%;
+    .card {
+        .img {
+            min-width: 50px;
+            max-width: 50px;
+            min-height: 50px;
+            max-height: 50px;
+            position: absolute;
+            top: 0;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #5ba4a4;
+            border-radius: 50%;
+        }
+
+        .card-info {
+            .card-details {
+                gap: 10px;
+            }
+        }
     }
 
     .app .card .card-info span {
