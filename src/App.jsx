@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
-import Card from "./component/card";
-import Filter from "./component/Filter";
+import Filter from "./Filter";
+import Card from "./Card";
 
 function App() {
     const [posts, setPosts] = useState([]);
